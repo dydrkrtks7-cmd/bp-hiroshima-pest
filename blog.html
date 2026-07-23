@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="bpaas-design-system" content="brutalist-avantgarde">
+<meta name="bpaas-design-theme" content="kr-acid-yellow">
+<title>합정 가라오케 이용 정보 | 합정 노래방 가이드</title>
+<meta name="description" content="합정 가라오케 이용 전 반드시 알아야 할 실질적 정보를 날것으로 전달합니다. 선택 기준, 이용 조건, 숨겨진 규칙까지.">
+<meta name="keywords" content="합정 가라오케, 합정 노래방, 가라오케 이용 정보, 노래방 선택 기준, 합정 엔터테인먼트">
+<link rel="canonical" href="https://hapjeong-karaoke-note.gongdeok-club.xyz">
+<meta property="og:title" content="합정 가라오케 이용 정보 | 합정 노래방 가이드">
+<meta property="og:description" content="합정 가라오케 이용 전 반드시 알아야 할 실질적 정보를 날것으로 전달합니다.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hapjeong-karaoke-note.gongdeok-club.xyz">
+<meta property="og:image" content="https://hapjeong-karaoke-note.gongdeok-club.xyz/og-image.jpg">
+<style>
+:root {
+    --color-bg: #0a0a0a;
+    --color-text: #e5e5e5;
+    --color-primary: #facc15;
+    --color-secondary: #a3a3a3;
+    --color-border: #262626;
+    --color-card-bg: #141414;
+    --color-card-hover: #1f1f1f;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+    --radius-sm: 0.125rem;
+    --radius-md: 0.25rem;
+    --radius-lg: 0.5rem;
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.k-nav-er9r {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-md) var(--space-xl);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-color: rgba(10, 10, 10, 0.9);
+}
+.k-nav-er9r-brand {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.k-nav-er9r-links {
+    display: flex;
+    gap: var(--space-lg);
+    list-style: none;
+}
+.k-nav-er9r-links a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: color var(--transition-fast);
+    position: relative;
+}
+.k-nav-er9r-links a:hover {
+    color: var(--color-primary);
+}
+.k-nav-er9r-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width var(--transition-normal);
+}
+.k-nav-er9r-links a:hover::after {
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .k-nav-er9r {
+        flex-direction: column;
+        gap: var(--space-md);
+        padding: var(--space-md);
+    }
+    .k-nav-er9r-links {
+        gap: var(--space-md);
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-xl);
+}
+section {
+    margin-bottom: var(--space-3xl);
+}
+.k-top-upxc {
+    margin-bottom: var(--space-3xl);
+    padding-bottom: var(--space-2xl);
+    border-bottom: 1px solid var(--color-border);
+}
+.k-top-upxc-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: var(--space-lg);
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+.k-top-upxc-subtitle {
+    font-size: 1.125rem;
+    color: var(--color-secondary);
+    max-width: 700px;
+    line-height: 1.7;
+}
+.v-item-hz3o {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-xl);
+}
+.m-card-i7cf {
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-xl);
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+.m-card-i7cf:hover {
+    background-color: var(--color-card-hover);
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+}
+.m-card-i7cf::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--color-primary);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform var(--transition-normal);
+}
+.m-card-i7cf:hover::before {
+    transform: scaleY(1);
+}
+.m-card-i7cf-title {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: var(--space-md);
+    color: var(--color-text);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.m-card-i7cf-content {
+    color: var(--color-secondary);
+    line-height: 1.7;
+    font-size: 0.9375rem;
+}
+.r-wrap-tpw9 {
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-2xl);
+    margin-top: var(--space-xl);
+}
+.r-wrap-tpw9-title {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: var(--space-xl);
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.faq-item {
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-lg) 0;
+}
+.faq-item:last-child {
+    border-bottom: none;
+}
+.faq-question {
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-bottom: var(--space-md);
+    color: var(--color-text);
+}
+.faq-answer {
+    color: var(--color-secondary);
+    line-height: 1.7;
+    padding-left: var(--space-lg);
+    border-left: 2px solid var(--color-primary);
+}
+.n-foot-dm7s {
+    border-top: 1px solid var(--color-border);
+    padding: var(--space-xl);
+    text-align: center;
+    background-color: var(--color-bg);
+}
+.n-foot-dm7s p {
+    color: var(--color-secondary);
+    font-size: 0.875rem;
+    margin-bottom: var(--space-md);
+}
+.n-foot-dm7s a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    transition: opacity var(--transition-fast);
+}
+.n-foot-dm7s a:hover {
+    opacity: 0.8;
+}
+@media (max-width: 768px) {
+    main {
+        padding: var(--space-lg);
+    }
+    .v-item-hz3o {
+        grid-template-columns: 1fr;
+    }
+    .m-card-i7cf, .r-wrap-tpw9 {
+        padding: var(--space-lg);
+    }
+}
+</style>
+</head>
+<body>
+<nav class="k-nav-er9r">
+    <a href="#" class="k-nav-er9r-brand">합정가라오케</a>
+    <ul class="k-nav-er9r-links">
+        <li><a href="#">홈</a></li>
+        <li><a href="#">가이드</a></li>
+        <li><a href="#">정보</a></li>
+        <li><a href="#">문의</a></li>
+    </ul>
+</nav>
+<main>
+    <header class="k-top-upxc">
+        <h1 class="k-top-upxc-title">합정 가라오케, 솔직한 이용 정보</h1>
+        <p class="k-top-upxc-subtitle">마케팅 문구는 잊어라. 합정 가라오케를 이용할 때 실제로 마주하게 되는 구조와 규칙, 그리고 당신이 선택해야 할 기준들에 대해 날것 그대로 전달한다.</p>
+    </header>
+    <section>
+        <h2 style="font-family: var(--font-mono); font-weight: 700; font-size: 1.75rem; margin-bottom: var(--space-xl); color: var(--color-text); text-transform: uppercase;">기본 구조: 돈을 지불하는 곳에 양심은 없다</h2>
+        <p style="color: var(--color-secondary); line-height: 1.8; margin-bottom: var(--space-xl); font-size: 1.0625rem;">
+            합정 지역 가라오케의 이용 구조는 단순하다. 시간당 요금을 지불하고, 방을 배정받는다. 하지만 여기서 '실제' 가격은 표시된 숫자와 다르다. 추가 음료, 서비스 수수료, 심야 할증. 이 모든 것이 결제 직전에야 표면에 드러난다. 대부분의 가라오케가 이렇게 운영된다. 당신이 할 일은 사전에 이 모든 항목을 확인하는 것이다.
+        </p>
+        <div class="v-item-hz3o">
+            <div class="m-card-i7cf">
+                <h3 class="m-card-i7cf-title">시간제 요금</h3>
+                <p class="m-card-i7cf-content">기본 1시간 단위로 계산된다. 30분 추가 시 정액 요금의 50~70%가 부과된다. '무제한 이용'이라는 문구는 대부분 새벽 시간대(예: 02시~07시)에만 적용된다. 주말이나 프라임 타임에는 절대 적용되지 않는다.</p>
+            </div>
+            <div class="m-card-i7cf">
+                <h3 class="m-card-i7cf-title">최소 주문 강제</h3>
+                <p class="m-card-i7cf-content">많은 곳이 입장 시 최소 주문 금액을 요구한다. 보통 2~3만 원 선. 이 금액은 '보증금'이 아니라 실질적인 주문 강제 조항이다. 룸에 입장하는 순간, 이 비용은 이미 지불된 것으로 간주된다.</p>
+            </div>
+            <div class="m-card-i7cf">
+                <h3 class="m-card-i7cf-title">시간 초과 과금</h3>
+                <p class="m-card-i7cf-content">예약 시간이 끝나면 10분 단위로 추가 과금된다. 5분이 지나면 바로 10분 요금이 부과되는 곳도 있다. 시간 체크는 직원이 아니라 시스템으로 자동 관리되므로, '몇 분만 더'라는 생각은 위험하다.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 style="font-family: var(--font-mono); font-weight: 700; font-size: 1.75rem; margin-bottom: var(--space-xl); color: var(--color-text); text-transform: uppercase;">선택 기준: 미적인 것보다 구조적인 것</h2>
+        <p style="color: var(--color-secondary); line-height: 1.8; margin-bottom: var(--space-xl); font-size: 1.0625rem;">
+            인테리어가 예쁘다고 좋은 가라오케가 아니다. 음향 시설이 최신이라고 좋은 가라오케가 아니다. 당신이 선택해야 할 기준은 오직 두 가지다. 첫째, 가격 구조가 투명한가. 둘째, 이용 조건이 명확한가. 이 두 가지를 충족하는 곳은 드물지만, 반드시 존재한다.
+        </p>
+        <div class="v-item-hz3o">
+            <div class="m-card-i7cf">
+                <h3 class="m-card-i7cf-title">음향 상태</h3>
+                <p class="m-card-i7cf-content">가장 중요한 기준이다. 마이크 잡음, 에코 조절, 볼륨 밸런스. 이 세 가지가 기본적으로 작동하는지 확인하라. 고가의 장비를 들여놓고 정작 조절이 안 되는 곳이 절반 이상이다.</p>
+            </div>
+            <div class="m-card-i7cf">
+                <h3 class="m-card-i7cf-title">방음 상태</h3>
+                <p class="m-card-i7cf-content">합정 지역은 건물 밀도가 높다. 방음이 허술하면 옆방 소리가 그대로 들리고, 당신의 소리도 그대로 전달된다. 이는 단순히 불편한 문제가 아니라, 이용 만족도를 결정짓는 핵심 변수다.</p>
+            </div>
+            <div class="m-card-i7cf">
+                <h3 class="m-card-i7cf-title">위치 접근성</h3>
+                <p class="m-card-i7cf-content">합정역에서 도보 5분 이내가 이상적이다. 그 이상은 시간과 체력 소모가 크다. 특히 심야 이용 시에는 지하철 막차 시간을 반드시 고려해야 한다.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="r-wrap-tpw9">
+            <h2 class="r-wrap-tpw9-title">자주 묻는 질문</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">예약 없이 방문하면 이용할 수 없나?</h3>
+                <p class="faq-answer">대부분 가능하다. 단, 주말이나 금요일 저녁에는 예약 고객에게 우선권이 주어지므로, 대기 시간이 길어질 수 있다. 평일 오후라면 거의 무조건 이용 가능하다.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">혼자 이용하는 것이 가능한가?</h3>
+                <p class="faq-answer">가능하다. '혼자 노래 부르는 사람'을 위한 1인 룸을 운영하는 곳이 점점 늘고 있다. 다만, 1인 룸이라도 최소 주문 조건은 동일하게 적용된다.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">음식물 반입이 가능한가?</h3>
+                <p class="faq-answer">대부분 불가능하다. 외부 음식물 반입은 대부분의 가라오케에서 금지하고 있다. 이는 위생 문제보다는 자체 매출을 위한 영업 방침에 가깝다.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">노래 곡 수는 얼마나 많은가?</h3>
+                <p class="faq-answer">보통 50,000곡 이상을 보유하고 있다. 하지만 최신 곡 업데이트는 시스템에 따라 다르며, 업데이트가 느린 곳도 상당수 존재한다. 이용 전에 원하는 곡이 있는지 문의하는 것이 확실하다.</p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="n-foot-dm7s">
+    <p>© 2024 합정가라오케. 모든 권리 보유.</p>
+    <a href="#">이용약관</a> | <a href="#">개인정보처리방침</a> | <a href="#">문의하기</a>
+</footer>
+</body>
+</html>
