@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hapjeong-karaoke-note.gongdeok-club.xyz/sitemap.xml
