@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 · rz-hiroshima-pest</title>
+  <meta name="description" content="rz-hiroshima-pest에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://hapjeong-karaoke-note.gongdeok-club.xyz/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+:root {
+ --color-bg: #0a0a0a;
+ --color-text: #e5e5e5;
+ --color-primary: #facc15;
+ --color-secondary: #a3a3a3;
+ --color-border: #262626;
+ --color-card-bg: #141414;
+ --color-card-hover: #1f1f1f;
+ --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+ --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+ --space-xs: 0.25rem;
+ --space-sm: 0.5rem;
+ --space-md: 1rem;
+ --space-lg: 1.5rem;
+ --space-xl: 2rem;
+ --space-2xl: 3rem;
+ --space-3xl: 4rem;
+ --radius-sm: 0.125rem;
+ --radius-md: 0.25rem;
+ --radius-lg: 0.5rem;
+ --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+ --transition-normal: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+ --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html {
+ scroll-behavior: smooth;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+body {
+ font-family: var(--font-sans);
+ background-color: var(--color-bg);
+ color: var(--color-text);
+ line-height: 1.6;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+}
+.k-nav-er9r {
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ background-color: var(--color-bg);
+ border-bottom: 1px solid var(--color-border);
+ padding: var(--space-md) var(--space-xl);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ backdrop-filter: blur(8px);
+ -webkit-backdrop-filter: blur(8px);
+ background-color: rgba(10, 10, 10, 0.9);
+}
+.k-nav-er9r-brand {
+ font-family: var(--font-mono);
+ font-weight: 700;
+ font-size: 1.25rem;
+ color: var(--color-primary);
+ text-decoration: none;
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+}
+.k-nav-er9r-links {
+ display: flex;
+ gap: var(--space-lg);
+ list-style: none;
+}
+.k-nav-er9r-links a {
+ color: var(--color-secondary);
+ text-decoration: none;
+ font-size: 0.875rem;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ transition: color var(--transition-fast);
+ position: relative;
+}
+.k-nav-er9r-links a:hover {
+ color: var(--color-primary);
+}
+.k-nav-er9r-links a::after {
+ content: '';
+ position: absolute;
+ bottom: -4px;
+ left: 0;
+ width: 0;
+ height: 2px;
+ background-color: var(--color-primary);
+ transition: width var(--transition-normal);
+}
+.k-nav-er9r-links a:hover::after {
+ width: 100%;
+}
+@media (max-width: 768px) {
+ .k-nav-er9r {
+ flex-direction: column;
+ gap: var(--space-md);
+ padding: var(--space-md);
+ }
+ .k-nav-er9r-links {
+ gap: var(--space-md);
+ flex-wrap: wrap;
+ justify-content: center;
+ }
+}
+main {
+ flex: 1;
+ width: 100%;
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: var(--space-xl);
+}
+section {
+ margin-bottom: var(--space-3xl);
+}
+.k-top-upxc {
+ margin-bottom: var(--space-3xl);
+ padding-bottom: var(--space-2xl);
+ border-bottom: 1px solid var(--color-border);
+}
+.k-top-upxc-title {
+ font-size: clamp(2rem, 5vw, 3.5rem);
+ font-weight: 800;
+ line-height: 1.1;
+ margin-bottom: var(--space-lg);
+ color: var(--color-primary);
+ text-transform: uppercase;
+ letter-spacing: -0.02em;
+}
+.k-top-upxc-subtitle {
+ font-size: 1.125rem;
+ color: var(--color-secondary);
+ max-width: 700px;
+ line-height: 1.7;
+}
+.v-item-hz3o {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: var(--space-lg);
+ margin-top: var(--space-xl);
+}
+.m-card-i7cf {
+ background-color: var(--color-card-bg);
+ border: 1px solid var(--color-border);
+ border-radius: var(--radius-md);
+ padding: var(--space-xl);
+ transition: all var(--transition-normal);
+ position: relative;
+ overflow: hidden;
+}
+.m-card-i7cf:hover {
+ background-color: var(--color-card-hover);
+ border-color: var(--color-primary);
+ transform: translateY(-2px);
+}
+.m-card-i7cf::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 4px;
+ height: 100%;
+ background-color: var(--color-primary);
+ transform: scaleY(0);
+ transform-origin: top;
+ transition: transform var(--transition-normal);
+}
+.m-card-i7cf:hover::before {
+ transform: scaleY(1);
+}
+.m-card-i7cf-title {
+ font-family: var(--font-mono);
+ font-weight: 700;
+ font-size: 1.25rem;
+ margin-bottom: var(--space-md);
+ color: var(--color-text);
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+}
+.m-card-i7cf-content {
+ color: var(--color-secondary);
+ line-height: 1.7;
+ font-size: 0.9375rem;
+}
+.r-wrap-tpw9 {
+ background-color: var(--color-card-bg);
+ border: 1px solid var(--color-border);
+ border-radius: var(--radius-md);
+ padding: var(--space-2xl);
+ margin-top: var(--space-xl);
+}
+.r-wrap-tpw9-title {
+ font-family: var(--font-mono);
+ font-weight: 700;
+ font-size: 1.5rem;
+ margin-bottom: var(--space-xl);
+ color: var(--color-primary);
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+}
+.faq-item {
+ border-bottom: 1px solid var(--color-border);
+ padding: var(--space-lg) 0;
+}
+.faq-item:last-child {
+ border-bottom: none;
+}
+.faq-question {
+ font-weight: 600;
+ font-size: 1.125rem;
+ margin-bottom: var(--space-md);
+ color: var(--color-text);
+}
+.faq-answer {
+ color: var(--color-secondary);
+ line-height: 1.7;
+ padding-left: var(--space-lg);
+ border-left: 2px solid var(--color-primary);
+}
+.n-foot-dm7s {
+ border-top: 1px solid var(--color-border);
+ padding: var(--space-xl);
+ text-align: center;
+ background-color: var(--color-bg);
+}
+.n-foot-dm7s p {
+ color: var(--color-secondary);
+ font-size: 0.875rem;
+ margin-bottom: var(--space-md);
+}
+.n-foot-dm7s a {
+ color: var(--color-primary);
+ text-decoration: none;
+ font-family: var(--font-mono);
+ font-size: 0.875rem;
+ transition: opacity var(--transition-fast);
+}
+.n-foot-dm7s a:hover {
+ opacity: 0.8;
+}
+@media (max-width: 768px) {
+ main {
+ padding: var(--space-lg);
+ }
+ .v-item-hz3o {
+ grid-template-columns: 1fr;
+ }
+ .m-card-i7cf, .r-wrap-tpw9 {
+ padding: var(--space-lg);
+ }
+}
+</style>
+  <meta property="og:title" content="글 목록 · rz-hiroshima-pest">
+  <meta property="og:description" content="rz-hiroshima-pest에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://hapjeong-karaoke-note.gongdeok-club.xyz/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="k-top-upxc">
+ <h1 class="k-top-upxc-title">합정 가라오케, 솔직한 이용 정보</h1>
+ <p class="k-top-upxc-subtitle">마케팅 문구는 잊어라. 합정 가라오케를 이용할 때 실제로 마주하게 되는 구조와 규칙, 그리고 당신이 선택해야 할 기준들에 대해 날것 그대로 전달한다.</p>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 1개</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260731-0060.html">합정 가라오케 이용 정보 안내</a>
+        <p class="post-item__summary">합정 지역은 다채로운 상권과 대중교통 편의성이 뛰어나 다양한 모임 장소로 자주 이용됩니다. 이 지역에서 음향 시설과 독립된 공간을 활용하여 노래를 즐기려는 수요가 늘어남에 따라 관련 시설 정보 확인</p>
+      </li>
+      </ul>
+
+    </main>
+  </div>
+</body>
+</html>
